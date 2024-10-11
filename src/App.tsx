@@ -5,78 +5,78 @@ const thinkingSteps = [
   {
     icon: Brain,
     title: "Organize Your Thoughts",
-    description: "Take a moment to mentally arrange your ideas before speaking.",
+    description: "Mentally arrange ideas before speaking.",
     tips: [
-      "Identify your main points",
-      "Determine a logical order",
-      "Consider your audience's perspective",
-      "Anticipate potential questions"
+      "Identify main points",
+      "Determine logical order",
+      "Consider audience perspective",
+      "Anticipate questions"
     ]
   },
   {
     icon: List,
     title: "Create Mental Outlines",
-    description: "Structure your thoughts into a clear, concise framework.",
+    description: "Structure thoughts into a clear framework.",
     tips: [
-      "Use a simple beginning-middle-end structure",
-      "Group related ideas together",
-      "Prioritize your most important points",
-      "Visualize your outline as a map"
+      "Use beginning-middle-end structure",
+      "Group related ideas",
+      "Prioritize important points",
+      "Visualize outline as a map"
     ]
   },
   {
     icon: Lightbulb,
     title: "Visualize Key Concepts",
-    description: "Form mental images of your main ideas to enhance recall.",
+    description: "Form mental images to enhance recall.",
     tips: [
-      "Associate each point with a vivid image",
-      "Create a mental 'journey' through your ideas",
-      "Use metaphors to link complex concepts",
-      "Practice visual thinking regularly"
+      "Associate points with vivid images",
+      "Create mental 'journey' of ideas",
+      "Use metaphors for complex concepts",
+      "Practice visual thinking"
     ]
   },
   {
     icon: MessageSquare,
     title: "Formulate Complete Sentences",
-    description: "Mentally compose clear, coherent sentences before speaking.",
+    description: "Mentally compose clear sentences before speaking.",
     tips: [
-      "Focus on one complete thought at a time",
-      "Keep sentences concise and to the point",
-      "Use transitional phrases between ideas",
-      "Practice 'inner speech' to refine your phrasing"
+      "Focus on one thought at a time",
+      "Keep sentences concise",
+      "Use transitional phrases",
+      "Practice 'inner speech'"
     ]
   },
   {
     icon: Repeat,
     title: "Practice Regularly",
-    description: "Incorporate this thinking-before-speaking approach in daily life.",
+    description: "Incorporate this approach in daily life.",
     tips: [
-      "Apply this method in casual conversations",
-      "Use it when answering questions at work or school",
-      "Practice while preparing for presentations",
-      "Reflect on your progress and adjust as needed"
+      "Apply in casual conversations",
+      "Use when answering questions",
+      "Practice for presentations",
+      "Reflect and adjust as needed"
     ]
   }
 ];
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4 print:p-0 print:bg-white">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold text-center text-gray-800 mb-8">
+        <h1 className="text-4xl font-bold text-center text-gray-800 mb-4">
           Think Before Speaking
         </h1>
-        <p className="text-xl text-center text-gray-600 mb-12">
-          Master the art of organizing your thoughts for clearer, more impactful communication
+        <p className="text-lg text-center text-gray-600 mb-6">
+          Master the art of organizing thoughts for clearer, more impactful communication
         </p>
-        <div className="space-y-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {thinkingSteps.map((step, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex items-start transform transition duration-500 hover:scale-102">
-              <step.icon className="w-12 h-12 text-indigo-600 mr-6 flex-shrink-0" />
+            <div key={index} className="bg-white rounded-lg shadow-md p-4 flex items-start">
+              <step.icon className="w-8 h-8 text-indigo-600 mr-3 flex-shrink-0" />
               <div>
-                <h2 className="text-2xl font-semibold text-gray-800 mb-2">{step.title}</h2>
-                <p className="text-gray-600 mb-4">{step.description}</p>
-                <ul className="list-disc pl-5 text-gray-700 space-y-2">
+                <h2 className="text-lg font-semibold text-gray-800 mb-1">{step.title}</h2>
+                <p className="text-sm text-gray-600 mb-2">{step.description}</p>
+                <ul className="list-disc pl-4 text-xs text-gray-700 space-y-1">
                   {step.tips.map((tip, tipIndex) => (
                     <li key={tipIndex}>{tip}</li>
                   ))}
@@ -85,7 +85,7 @@ function App() {
             </div>
           ))}
         </div>
-        <p className="mt-12 text-center text-gray-600 text-lg">
+        <p className="mt-6 text-center text-gray-600 text-sm">
           Implement these techniques to enhance your communication skills and speak with greater clarity and confidence!
         </p>
       </div>
