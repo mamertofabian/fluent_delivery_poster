@@ -1,40 +1,20 @@
-import React from 'react';
-import { Brain, MessageSquare, Repeat } from 'lucide-react';
+import { Brain } from 'lucide-react';
 
 const thinkingSteps = [
   {
     icon: Brain,
-    title: "Organize Your Thoughts",
-    description: "Structure and visualize ideas before speaking.",
-    tips: [
-      "Identify and prioritize main points",
-      "Create a mental outline or map",
-      "Visualize key concepts with vivid images",
-      "Consider your audience's perspective"
-    ]
-  },
-  {
-    icon: MessageSquare,
     title: "Formulate Clear Sentences",
     description: "Mentally compose your message before delivery.",
     tips: [
+      "Decide what ideas you want to convey and the order in which you are going to state them; then start talking.",
+      "Do not rush.",
+      "Learn to think first and then to say complete sentences without stopping.",
       "Focus on one complete thought at a time",
       "Keep sentences concise and clear",
       "Use transitional phrases between ideas",
       "Practice 'inner speech' to refine your message"
     ]
   },
-  {
-    icon: Repeat,
-    title: "Practice Daily",
-    description: "Incorporate this approach in everyday life.",
-    tips: [
-      "Apply in casual conversations",
-      "Use when answering questions",
-      "Prepare for presentations and meetings",
-      "Reflect on your progress and adjust as needed"
-    ]
-  }
 ];
 
 function App() {
