@@ -61,22 +61,22 @@ const thinkingSteps = [
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4 print:p-0 print:bg-white">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-center text-gray-800 mb-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-6 print:p-2 print:bg-white">
+      <div className="max-w-5xl mx-auto">
+        <h1 className="text-5xl font-bold text-center text-gray-800 mb-6">
           Think Before Speaking
         </h1>
-        <p className="text-lg text-center text-gray-600 mb-6">
+        <p className="text-xl text-center text-gray-600 mb-8">
           Master the art of organizing thoughts for clearer, more impactful communication
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {thinkingSteps.map((step, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md p-4 flex items-start">
-              <step.icon className="w-8 h-8 text-indigo-600 mr-3 flex-shrink-0" />
+            <div key={index} className="bg-white rounded-lg shadow-md p-5 flex items-start">
+              <step.icon className="w-10 h-10 text-indigo-600 mr-4 flex-shrink-0" />
               <div>
-                <h2 className="text-lg font-semibold text-gray-800 mb-1">{step.title}</h2>
-                <p className="text-sm text-gray-600 mb-2">{step.description}</p>
-                <ul className="list-disc pl-4 text-xs text-gray-700 space-y-1">
+                <h2 className="text-xl font-semibold text-gray-800 mb-2">{step.title}</h2>
+                <p className="text-base text-gray-600 mb-3">{step.description}</p>
+                <ul className="list-disc pl-5 text-sm text-gray-700 space-y-1">
                   {step.tips.map((tip, tipIndex) => (
                     <li key={tipIndex}>{tip}</li>
                   ))}
@@ -85,7 +85,7 @@ function App() {
             </div>
           ))}
         </div>
-        <p className="mt-6 text-center text-gray-600 text-sm">
+        <p className="mt-8 text-center text-gray-600 text-base">
           Implement these techniques to enhance your communication skills and speak with greater clarity and confidence!
         </p>
       </div>
